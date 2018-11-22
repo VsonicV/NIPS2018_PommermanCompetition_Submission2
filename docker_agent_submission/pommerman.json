@@ -1,0 +1,34 @@
+{
+  "config": {
+    "calc_obstat_prob": 0,
+    "episodes_per_batch": 32,
+    "eval_prob": 0,
+    "l2coeff": 0.005,
+    "noise_stdev": 0.02,
+    "snapshot_freq": 20,
+    "timesteps_per_batch": 100000000,
+    "return_proc_mode": "centered_rank",
+    "episode_cutoff_mode": "env_default"
+  },
+  "env_id": "Pommerman-v1",
+  "exp_prefix": "pommerman",
+  "optimizer": {
+    "args": {
+      "stepsize": 0.01
+    },
+    "type": "adam"
+  },
+  "policy": {
+    "args": {
+      "ac_bins": "uniform:6",
+      "ac_noise_std": 0,
+      "connection_type": "ff",
+      "hidden_dims": [
+        256,
+        256
+      ],
+      "nonlin_type": "tanh"
+    },
+    "type": "PommermanPolicy"
+  }
+}
