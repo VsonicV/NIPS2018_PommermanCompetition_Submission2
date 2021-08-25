@@ -10,4 +10,4 @@ astroid~=1.6
 isort~=4.3.4
 pylint~=1.9.2
 h5py
-tensorflow==1.7
+tensorflow==2.5.1
